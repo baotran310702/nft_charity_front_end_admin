@@ -20,7 +20,7 @@ export default function MyTableCampaign({ setIds, auctions }) {
   const list = campaigns.filter((camp) => {
     let flag = true;
     auctions.forEach((auc) => {
-      if (auc.campaign_id == camp.id) flag = false;
+      if (auc.camp_id == camp.id) flag = false;
     });
     return flag;
   });

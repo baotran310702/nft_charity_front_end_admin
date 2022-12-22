@@ -21,7 +21,7 @@ export default (state = initState, action) => {
     case CREATE_AUCTION:
       return {
         ...state,
-        auctions: [...state.auctions, action.payload.auction],
+        auctions: [...state.auctions, action.payload],
         isLoading: false,
       };
       case FETCH_AUCTION_BY_ID:

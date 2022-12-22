@@ -62,7 +62,7 @@ export default function Index() {
 
     const auc = {
       nft_id: ids.nftId,
-      campaign_id: ids.campId,
+      camp_id: ids.campId,
       status: 'Available',
       endAt: formData.endAt* 3600 + Date.now()/1000
     };
@@ -72,7 +72,7 @@ export default function Index() {
       payload: {id: ids.nftId, endAt: formData.endAt* 3600 + Date.now()/1000 }
     })
     setLoading(false)
-
+    window.location.reload();
   };
 
   return (

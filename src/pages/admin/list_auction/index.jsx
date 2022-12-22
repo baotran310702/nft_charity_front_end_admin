@@ -32,7 +32,7 @@ const List_Auc = () => {
       width: 20,
     },
     {
-      field: 'campaign_id',
+      field: 'camp_id',
       headerName: 'Campaign ID',
       width: 100,
     },
@@ -120,7 +120,7 @@ const List_Auc = () => {
   return (
     <>
       <Box className="homepages">
-        <Typography className="pages_title">Active Campaign</Typography>
+        <Typography className="pages_title">LIST Auctions</Typography>
 
         <Box>
           {isLoading ? (

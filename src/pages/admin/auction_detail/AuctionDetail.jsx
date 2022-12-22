@@ -569,7 +569,7 @@ const AuctionDetail = () => {
       setIsEnded(true)
       await (await marketplaceContract.endAuction(nft.id)).wait();
     }
-    await api.doneAuction(currAuction.nft_id);
+    await api.doneAuction(currAuction.nft.id);
   
     setLoading(false)
     // window.location.reload();
